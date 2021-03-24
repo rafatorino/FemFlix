@@ -1,0 +1,150 @@
+:root{ /*seta variáveis para o arquivo inteiro dentro da raiz do documento*/
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{ /* reset do css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* limita o tamanho dos elementos ao tamanho do box, da borda da caixa*/
+}
+
+/* elementos base */
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    
+    display: flex; /* método flexbox, alinha os elementos em tela. no flex joga tudo pra linha. por padrão é assim. */
+    flex-direction: row; /* confirma que os elementos ficarão na horizontal, em linha */
+    align-items: center; /* centraliza na vertical os elementos, nao ficam grudados no borda superior */
+    justify-content: space-between; /* alinha os elementos na horizontal ao contrario do align-items */
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px; /*deixa um espaço maior a direita de cada link*/
+}
+
+header nav a:hover{ /*muda o elemento quando passa o mouse em cima*/
+    color: #fff;
+}
+
+/* filme principal */
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.20), rgba(0,0,0,.50)100%), url('/img/capa-gg.jpg'); /* coloca imagem de fundo*/
+
+    height:400px; /* coloca altura máxima dentro do container filme-principal*/
+    background-size: cover; /* faz com que a imagem caiba dentro do container*/
+
+    display: flex; /* coloca os elementos em linha */
+    flex-direction: column; /* orienta eles em coluna */
+    justify-content: center; /* o justify content sempre segue o flex direction. centraliza dentro do container */
+    align-items: flex-start; /* orienta os elementos ao inicio da pagina, qdo o flex direction ta em coluna, o align items é sobre um lado ou outro na horizontal */
+} 
+
+.filme-principal .descricao{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50); /*transparente*/
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all; /* faz uma transicao quando passa o mouse */
+}
+
+.botao:hover{ /* quando o mouse passa em cima muda a cor */
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 15px; /* não deixa o texto grudado na margem esquerda e engloba tudo que ta dentro de todos os containers */
+}
+
+.filme-principal .container{
+    width: 70%; /* coloca um limite de 70% do container para os conteúdos se espalharem, n vai até o fim da tela */
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block
+}
+
+.carrossel-filmes{
+    margin-top: 20px;
+}
+
+.titulo-menu{
+    font-family:'Trebuchet MS', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+   
+    color: #E50914;
+    margin-top: 15px;
+}
+
+.disclaimer{
+    font-weight: unset;
+    }
+
+.botao-pai {
+    text-align: center;
+}
+
+.botao-titulo{
+    text-decoration: none;
+    background-color: rgb(230, 26, 26);
+
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+
+    margin-top: 15px;
+
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao-titulo:hover{ /* quando o mouse passa em cima muda a cor */
+    background-color: white;
+    color: rgb(230, 26, 26);
+}
+
+

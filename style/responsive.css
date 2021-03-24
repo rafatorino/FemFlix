@@ -1,0 +1,18 @@
+@media screen and (max-width: 700px){ /*estou aplicando o mediaqueries na tela (screen) e tb na largura maxima da tela (max-width)*/
+    header .container{
+        display: flex;
+        flex-direction: column; /*vai jogar pra baixo, em coluna, os links quando a tela for menos de 700px*/
+    }
+
+    .botao{
+        margin-top: 5px; /*vai dar um espaço nos botoes quando a tela diminuir. antes ficavam grudados*/
+        width: 300px; /* padroniza o tamanho dos botoes quando a tela for menor que 700px */
+    }
+
+}
+
+@media screen and (min-width:1000px){ /*quando a largura da tela for minimo de 1000px, ou seja, tamanh normal, o texto da descriçao ficara concentrado no canto e nao ficara espalhado */
+    .descricao{
+        width: 50%;
+    }
+}
